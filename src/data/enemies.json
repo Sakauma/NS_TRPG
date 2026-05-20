@@ -1,0 +1,89 @@
+[
+  {
+    "id": "clone-yakuza",
+    "name": "克隆黑道",
+    "side": "enemy",
+    "role": "训练用杂鱼",
+    "tags": ["mortal", "clone-yakuza", "mob"],
+    "stats": { "karate": 2, "neuron": 1, "wazamae": 3, "jitsu": 0, "health": 1, "mental": 1, "footwork": 2 },
+    "derived": { "attack": 2, "shooting": 3, "initiative": 1, "hacking": 1, "evasion": 0, "precision": 3, "cartwheel": 0, "casting": 0 },
+    "dkk": 0,
+    "reputation": 0,
+    "money": 1,
+    "equipment": ["恰卡枪"],
+    "skills": [],
+    "jutsu": [],
+    "weapons": [
+      { "id": "club", "name": "素手/警棍", "kind": "melee", "damage": 1 },
+      { "id": "chaka-gun", "name": "恰卡枪", "kind": "ranged", "damage": 1, "burst": 1, "range": 8 }
+    ],
+    "aiProfile": "cloneYakuza",
+    "boss": false,
+    "rulesSource": "入门规则 V4 p.46"
+  },
+  {
+    "id": "motor-yabu",
+    "name": "机动亚布",
+    "side": "enemy",
+    "role": "暴徒镇压兵器",
+    "tags": ["war-machine", "mob"],
+    "stats": { "karate": 4, "neuron": 1, "wazamae": 6, "jitsu": 0, "health": 6, "mental": 1, "footwork": 2 },
+    "derived": { "attack": 4, "shooting": 6, "initiative": 1, "hacking": 1, "evasion": 0, "precision": 6, "cartwheel": 0, "casting": 0 },
+    "dkk": 0,
+    "reputation": 0,
+    "money": 3,
+    "equipment": ["机关枪", "火焰放射器"],
+    "skills": ["连射 3"],
+    "jutsu": [],
+    "weapons": [
+      { "id": "metal-claw", "name": "金属爪", "kind": "melee", "damage": 1 },
+      { "id": "machine-gun", "name": "机关枪", "kind": "ranged", "damage": 1, "burst": 3, "range": 9 }
+    ],
+    "aiProfile": "gunner",
+    "boss": false,
+    "rulesSource": "入门规则 V4 p.47-48 教学敌人"
+  },
+  {
+    "id": "mexico-lion",
+    "name": "墨西哥狮",
+    "side": "enemy",
+    "role": "危险生物",
+    "tags": ["dangerous-beast"],
+    "stats": { "karate": 8, "neuron": 1, "wazamae": 3, "jitsu": 0, "health": 8, "mental": 2, "footwork": 4 },
+    "derived": { "attack": 8, "shooting": 0, "initiative": 1, "hacking": 0, "evasion": 0, "precision": 3, "cartwheel": 0, "casting": 0 },
+    "dkk": 0,
+    "reputation": 0,
+    "money": 2,
+    "equipment": ["爪与牙"],
+    "skills": ["连续攻击 2", "突击"],
+    "jutsu": [],
+    "weapons": [
+      { "id": "fangs", "name": "爪牙", "kind": "melee", "damage": 1 }
+    ],
+    "aiProfile": "beast",
+    "boss": true,
+    "rulesSource": "入门规则 V4 p.49"
+  },
+  {
+    "id": "suicide",
+    "name": "自杀者",
+    "side": "enemy",
+    "role": "叛逆忍者",
+    "tags": ["ninja", "boss"],
+    "stats": { "karate": 5, "neuron": 5, "wazamae": 4, "jitsu": 5, "health": 5, "mental": 5, "footwork": 3 },
+    "derived": { "attack": 5, "shooting": 4, "initiative": 5, "hacking": 5, "evasion": 5, "precision": 4, "cartwheel": 4, "casting": 10 },
+    "dkk": 0,
+    "reputation": 0,
+    "money": 5,
+    "equipment": ["素手"],
+    "skills": [],
+    "jutsu": ["灵魂吸收忍术"],
+    "weapons": [
+      { "id": "bare-hands", "name": "素手空手道", "kind": "melee", "damage": 1 },
+      { "id": "soul-absorption", "name": "灵魂吸收", "kind": "jutsu", "damage": 1 }
+    ],
+    "aiProfile": "suicide",
+    "boss": true,
+    "rulesSource": "入门规则 V4 p.50"
+  }
+]

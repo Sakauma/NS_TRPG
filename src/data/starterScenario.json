@@ -1,0 +1,87 @@
+{
+  "id": "njslyr-starter-tutorial",
+  "title": "忍者杀手 TRPG：入门训练剧本",
+  "version": "0.1.0",
+  "source": {
+    "primaryRulebook": "C:\\Users\\Ajax Mao\\Desktop\\忍杀相关\\ニンジャスレイヤーTRPG書籍版スターターキット_V4.pdf",
+    "guide": "C:\\Users\\Ajax Mao\\Desktop\\忍杀相关\\【TRPG】享受忍者杀手TRPG的方式.docx",
+    "mapArchive": "C:\\Users\\Ajax Mao\\Desktop\\忍杀相关\\【TRPG】地图设计CON（893）.zip",
+    "illustrationRoot": "C:\\Users\\Ajax Mao\\Desktop\\忍杀相关\\忍者杀手小说插图"
+  },
+  "rooms": [
+    {
+      "id": "room-1",
+      "title": "房间 1：粗暴欢迎",
+      "mapId": "training-room-1",
+      "sourcePage": "入门规则 V4 p.45-46",
+      "intro": "新晋总会屋忍者被带入训练场。四名克隆黑道持枪待命。多摩，训练的空手道气氛已经满溢。",
+      "objective": "击倒所有克隆黑道。",
+      "ruleFocus": ["先制顺序", "通常移动", "近战攻击", "射击", "基础闪避"],
+      "enemySpawns": [
+        {
+          "templateId": "clone-yakuza",
+          "count": 4,
+          "positions": [{ "x": 7, "y": 1 }, { "x": 7, "y": 3 }, { "x": 7, "y": 5 }, { "x": 5, "y": 3 }]
+        }
+      ]
+    },
+    {
+      "id": "room-2",
+      "title": "房间 2：克隆黑道小队",
+      "mapId": "training-room-2",
+      "sourcePage": "入门规则 V4 p.47",
+      "intro": "更多克隆黑道从训练场深处展开。枪口如廉价霓虹般排成一列。这里适合练习分工、集中火力和群体闪避。",
+      "objective": "击倒六名克隆黑道。",
+      "ruleFocus": ["多目标威胁", "合并闪避", "忍术使用时机"],
+      "enemySpawns": [
+        {
+          "templateId": "clone-yakuza",
+          "count": 6,
+          "positions": [{ "x": 7, "y": 1 }, { "x": 8, "y": 2 }, { "x": 9, "y": 3 }, { "x": 8, "y": 4 }, { "x": 7, "y": 5 }, { "x": 6, "y": 3 }]
+        }
+      ]
+    },
+    {
+      "id": "room-3",
+      "title": "房间 3：机动亚布出现",
+      "mapId": "training-room-3",
+      "sourcePage": "入门规则 V4 p.47-48",
+      "intro": "暴徒镇压用战斗兵器踏入训练场。机关枪的连射会无慈悲地测试小队的闪避骰管理。",
+      "objective": "击破机动亚布与护卫。",
+      "ruleFocus": ["连射", "射线阻挡", "万钞池", "忍者肾上腺素"],
+      "enemySpawns": [
+        { "templateId": "motor-yabu", "count": 1, "positions": [{ "x": 8, "y": 4 }] },
+        {
+          "templateId": "clone-yakuza",
+          "count": 2,
+          "positions": [{ "x": 7, "y": 2 }, { "x": 7, "y": 6 }]
+        }
+      ]
+    },
+    {
+      "id": "room-4",
+      "title": "房间 4：死亡竞技场",
+      "mapId": "training-room-4",
+      "sourcePage": "入门规则 V4 p.48-49",
+      "intro": "训练场地形被切碎，危险生物墨西哥狮被释放。连续攻击并非枪弹齐射，不能轻易一次性躲过。南无三！",
+      "objective": "击倒墨西哥狮。",
+      "ruleFocus": ["连续攻击", "时间差闪避", "强敌生命值", "气绝与爆发四散"],
+      "enemySpawns": [
+        { "templateId": "mexico-lion", "count": 1, "positions": [{ "x": 7, "y": 3 }] }
+      ]
+    },
+    {
+      "id": "room-5",
+      "title": "房间 5：自杀者乱入",
+      "mapId": "training-room-5",
+      "sourcePage": "入门规则 V4 p.50",
+      "intro": "叛逆气质十足的忍者自杀者闯入训练。最后一课是忍者级敌人、闪避骰与忍术。空手道张力已经升高。",
+      "objective": "让自杀者撤退或击倒他。",
+      "ruleFocus": ["忍者级敌人", "忍术", "强敌闪避", "空手道气氛"],
+      "enemySpawns": [
+        { "templateId": "suicide", "count": 1, "positions": [{ "x": 6, "y": 3 }] },
+        { "templateId": "clone-yakuza", "count": 2, "positions": [{ "x": 7, "y": 2 }, { "x": 7, "y": 4 }] }
+      ]
+    }
+  ]
+}

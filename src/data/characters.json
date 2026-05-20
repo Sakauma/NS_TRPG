@@ -1,0 +1,88 @@
+[
+  {
+    "id": "fire-eater",
+    "name": "火焰吞食者",
+    "side": "pc",
+    "role": "火遁忍术入门者",
+    "tags": ["ninja", "soukaiya"],
+    "stats": { "karate": 5, "neuron": 1, "wazamae": 3, "jitsu": 1, "health": 5, "mental": 1, "footwork": 3 },
+    "derived": { "attack": 6, "shooting": 3, "initiative": 1, "hacking": 1, "evasion": 6, "precision": 3, "cartwheel": 3, "casting": 2 },
+    "dkk": 0,
+    "reputation": 1,
+    "money": 0,
+    "equipment": ["铁手甲 LV1", "武士刀", "软绵绵贷款"],
+    "skills": ["知识：危险生物"],
+    "jutsu": ["火遁忍术 LV1"],
+    "weapons": [
+      { "id": "bare-hands", "name": "素手空手道", "kind": "melee", "damage": 1 },
+      { "id": "katana", "name": "武士刀", "kind": "melee", "damage": 1, "notes": "可宣言强攻击/精密攻击，V1 作为普通近战武器处理。" },
+      { "id": "shuriken", "name": "手里剑", "kind": "ranged", "damage": 1, "burst": 1 }
+    ],
+    "boss": false,
+    "rulesSource": "入门规则 V4 p.6 示例玩家角色"
+  },
+  {
+    "id": "chrome-viper",
+    "name": "铬毒蛇",
+    "side": "pc",
+    "role": "赛博近战忍者",
+    "tags": ["ninja", "soukaiya"],
+    "stats": { "karate": 6, "neuron": 2, "wazamae": 2, "jitsu": 0, "health": 6, "mental": 2, "footwork": 3 },
+    "derived": { "attack": 7, "shooting": 2, "initiative": 2, "hacking": 2, "evasion": 7, "precision": 2, "cartwheel": 2, "casting": 2 },
+    "dkk": 0,
+    "reputation": 1,
+    "money": 0,
+    "equipment": ["铁手甲 LV1", "个人面甲"],
+    "skills": ["突击倾向"],
+    "jutsu": [],
+    "weapons": [
+      { "id": "bare-hands", "name": "素手空手道", "kind": "melee", "damage": 1 },
+      { "id": "shuriken", "name": "手里剑", "kind": "ranged", "damage": 1, "burst": 1 }
+    ],
+    "boss": false,
+    "rulesSource": "入门规则兼容快速玩家角色"
+  },
+  {
+    "id": "neon-shade",
+    "name": "霓虹影",
+    "side": "pc",
+    "role": "巧手射击忍者",
+    "tags": ["ninja", "soukaiya"],
+    "stats": { "karate": 3, "neuron": 3, "wazamae": 6, "jitsu": 0, "health": 3, "mental": 3, "footwork": 4 },
+    "derived": { "attack": 3, "shooting": 7, "initiative": 3, "hacking": 3, "evasion": 7, "precision": 7, "cartwheel": 6, "casting": 3 },
+    "dkk": 0,
+    "reputation": 1,
+    "money": 0,
+    "equipment": ["赛博义眼 LV1", "恰卡枪"],
+    "skills": ["射击重点"],
+    "jutsu": [],
+    "weapons": [
+      { "id": "bare-hands", "name": "素手空手道", "kind": "melee", "damage": 1 },
+      { "id": "chaka-gun", "name": "恰卡枪", "kind": "ranged", "damage": 1, "burst": 1, "range": 8 },
+      { "id": "shuriken", "name": "手里剑", "kind": "ranged", "damage": 1, "burst": 1 }
+    ],
+    "boss": false,
+    "rulesSource": "入门规则兼容快速玩家角色"
+  },
+  {
+    "id": "byte-ronin",
+    "name": "字节浪人",
+    "side": "pc",
+    "role": "神经元支援忍者",
+    "tags": ["ninja", "soukaiya", "hacker"],
+    "stats": { "karate": 2, "neuron": 6, "wazamae": 3, "jitsu": 1, "health": 2, "mental": 6, "footwork": 3 },
+    "derived": { "attack": 2, "shooting": 3, "initiative": 7, "hacking": 7, "evasion": 7, "precision": 3, "cartwheel": 3, "casting": 7 },
+    "dkk": 0,
+    "reputation": 1,
+    "money": 0,
+    "equipment": ["生体 LAN 端子 LV1", "病毒软盘"],
+    "skills": ["黑客重点"],
+    "jutsu": ["金缚忍术 LV1"],
+    "weapons": [
+      { "id": "bare-hands", "name": "素手空手道", "kind": "melee", "damage": 1 },
+      { "id": "shuriken", "name": "手里剑", "kind": "ranged", "damage": 1, "burst": 1 }
+    ],
+    "boss": false,
+    "rulesSource": "入门规则兼容快速玩家角色"
+  }
+]
