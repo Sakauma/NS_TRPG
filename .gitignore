@@ -22,4 +22,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-dev-server.err
+dev-server*.err
+dev-server*.out

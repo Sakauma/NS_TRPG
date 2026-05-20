@@ -1,4 +1,5 @@
 import { Brain, Crosshair, Dices, Footprints, Swords, Wind, Zap } from "lucide-react";
+import { portraitUrlForTemplateId } from "../data/portraits";
 import type { Action, ActorState, GameContent, GameState } from "../engine/types";
 import { difficultyLabel } from "../engine/rules";
 import { requireRoom } from "../engine/scenarioRules";
@@ -161,11 +162,16 @@ export function ScenarioPanel({ content, state }: { content: GameContent; state:
 }
 
 export function ActorCard({ actor }: { actor: ActorState }) {
+  const portraitUrl = portraitUrlForTemplateId(actor.templateId);
+
   return (
     <article className={`actor-card ${actor.side} ${actor.status}`}>
-      <div className="actor-card-title">
-        <strong>{actor.name}</strong>
-        <span>{actor.role}</span>
+      <div className="actor-card-header">
+        <img alt="" className="actor-portrait" src={portraitUrl} />
+        <div className="actor-card-title">
+          <strong>{actor.name}</strong>
+          <span>{actor.role}</span>
+        </div>
       </div>
       <div className="stat-line">
         <span>体力 {actor.health}/{actor.stats.health}</span>

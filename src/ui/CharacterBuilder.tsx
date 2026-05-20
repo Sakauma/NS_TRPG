@@ -1,6 +1,7 @@
 import { Dices, Plus, Shuffle, Trash2, UserRoundCheck } from "lucide-react";
 import { useState } from "react";
 import { emptyDraft } from "../data/creationCatalog";
+import { portraitUrlForTemplateId } from "../data/portraits";
 import {
   buildCharacter,
   cloneDraft,
@@ -185,6 +186,13 @@ export function CharacterBuilder({ catalog, onStart }: CharacterBuilderProps) {
           <div className="section-heading">
             <h2>入场预览</h2>
             <span>自动计算</span>
+          </div>
+          <div className="builder-portrait-card">
+            <img alt="" src={portraitUrlForTemplateId(activeBuild.character?.presetId ?? activeDraft.id)} />
+            <div>
+              <strong>{activeBuild.character?.name ?? activeDraft.name}</strong>
+              <span>{activeBuild.character?.role ?? activeDraft.role}</span>
+            </div>
           </div>
           <div className="derived-grid">
             <span>体力 {activeBuild.character?.stats.health ?? "-"}</span>
